@@ -64,7 +64,7 @@ const Skills = () => {
                 className="bg-primaryBorder m-1 rounded-xl p-4 cursor-pointer"
               >
                 <Image
-                  src={"/" + img.src}
+                  src={img.src}
                   alt={img.alt}
                   width={50}
                   height={50}
@@ -86,7 +86,7 @@ const Skills = () => {
                 className="bg-primaryBorder m-1 rounded-xl p-4 cursor-pointer"
               >
                 <Image
-                  src={"/" + img.src}
+                  src={ img.src}
                   alt={img.alt}
                   width={50}
                   height={50}
