@@ -59,7 +59,7 @@ const Experience = () => {
               <div>
                 
                   <Image
-                    src={"/" + exp.image}
+                    src={ exp.image}
                     alt={exp.name}
                     width={100}
                     height={100}
