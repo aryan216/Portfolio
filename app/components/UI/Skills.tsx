@@ -12,34 +12,34 @@ type Skill = {
 const Skills = () => {
   const FRONTEND: Skill[] = [
      // Array of front-end skills
-    { id: 1, src: "html-5.png", alt: "HTML" },
-    { id: 2, src: "css.png", alt: "CSS" },
-    { id: 3, src: "javascript.svg", alt: "Javascript" },
-    { id: 4, src: "java.png", alt: "Java" },
-    { id: 5, src: "typescript.png", alt: "Typescript" },
-    { id: 6, src: "bootstrap.svg", alt: "Bootstrap" },
-    { id: 7, src: "react.png", alt: "React" },
-    { id: 8, src: "redux.svg", alt: "Redux" },
-    { id: 9, src: "next.png", alt: "Next" },
-    { id: 10, src: "tailwind.png", alt: "Tailwind" },
-    { id: 11, src: "git.svg", alt: "Git" },
-    { id: 12, src: "github.svg", alt: "Github" },
-    { id: 13, src: "shadcn.png", alt: "Shadcn" },
-    { id: 13, src: "nextui.png", alt: "NextUi" },
+    { id: 1, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963277/html-5_k2p08f.png", alt: "HTML" },
+    { id: 2, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963276/css_tw0q1d.png", alt: "CSS" },
+    { id: 3, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963346/javascript_ihhknb.svg", alt: "Javascript" },
+    { id: 4, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963277/java_jomy3o.png", alt: "Java" },
+    { id: 5, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/typescript_a82db2.png", alt: "Typescript" },
+    { id: 6, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963338/bootstrap_pfcfcn.svg", alt: "Bootstrap" },
+    { id: 7, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/react_sgk0me.png", alt: "React" },
+    { id: 8, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963347/redux_ljaxb0.svg", alt: "Redux" },
+    { id: 9, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963277/next_flqnpv.png", alt: "Next" },
+    { id: 10, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/tailwind_avoyck.png", alt: "Tailwind" },
+    { id: 11, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963341/git_ybcahu.svg", alt: "Git" },
+    { id: 12, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963344/github_mm5omt.svg", alt: "Github" },
+    { id: 13, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/shadcn_amc3uc.png", alt: "Shadcn" },
+    { id: 13, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/nextui_et5pja.png", alt: "NextUi" },
 
   ];
 
   const BACKEND: Skill[] = [
 
   // Array of back-end skills
-    { id: 1, src: "node-js.png", alt: "HTML" },
-    { id: 2, src: "express.svg", alt: "CSS" },
-    { id: 3, src: "mongodb.svg", alt: "Javascript" },
-    { id: 4, src: "postgres.png", alt: "Java" },
-    { id: 5, src: "kafka.png", alt: "Kafka" },
-    { id: 6, src: "Docker.svg", alt: "Redux" },
-    { id: 7, src: "aws.png", alt: "Tailwind" },
-    { id: 8, src: "graphql.svg", alt: "Git" },
+    { id: 1, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/node-js_caplyu.png", alt: "HTML" },
+    { id: 2, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963340/express_hgcd3t.svg", alt: "CSS" },
+    { id: 3, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963347/mongodb_pgt0r7.svg", alt: "Javascript" },
+    { id: 4, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963278/postgres_v2cxru.png", alt: "Java" },
+    { id: 5, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963276/kafka_ujsuzb.png", alt: "Kafka" },
+    { id: 6, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963339/Docker_ot4ecw.svg", alt: "Redux" },
+    { id: 7, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963835/aws_dizxyf.png", alt: "Tailwind" },
+    { id: 8, src: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963345/graphql_jexczz.svg", alt: "Git" },
   ];
 
   return (

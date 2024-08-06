@@ -31,7 +31,7 @@ const HeroPage = () => {
           <div className="flex items-center justify-center gap-3">
             <div className="flex items-center justify-center pt-1 rounded-full w-11 h-11 bg-primaryCream">
               <Image
-                src="/face.webp"
+                src="https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963277/face_j6s0m0.webp"
                 alt="Face"
                 width={100}
                 height={100}
@@ -54,7 +54,7 @@ const HeroPage = () => {
                     className="absolute w-20 sm:w-28"
                   >
                     <Image
-                      src="/cursor1.svg"
+                      src="https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963276/cursor3_b1gqyu.png"
                       alt="product"
                       width={100}
                       height={100}
@@ -81,7 +81,7 @@ const HeroPage = () => {
                 className="absolute w-14 sm:w-20"
               >
                 <Image
-                  src="/cursor3.png"
+                  src="https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963338/cursor1_ooctst.svg"
                   alt="product"
                   width={100}
                   height={100}
@@ -129,7 +129,7 @@ const HeroPage = () => {
                   className="absolute w-14 sm:w-20"
                 >
                   <Image
-                    src="/cursor2.svg"
+                    src="https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963338/cursor2_oyvgbp.svg"
                     alt="product"
                     width={100}
                     height={100}

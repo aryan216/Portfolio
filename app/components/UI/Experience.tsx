@@ -19,14 +19,14 @@ const Experience = () => {
     {
       id: 1,
       name: "Stairs",
-      image: "stairs.svg",
+      image: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963349/stairs_qfgo56.svg",
       position: "SDE-Intern",
       color: "primaryCyan",
     },
     {
       id: 2,
       name: "Ecentric India",
-      image: "ecentric.svg",
+      image: "https://res.cloudinary.com/dvau3pvl9/image/upload/v1722963339/ecentric_ymam7x.svg",
       position: "Freelancing",
     
       color: "primaryPurple",
