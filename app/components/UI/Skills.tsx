@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Marquee from "react-fast-marquee";
-
+import Marquee from "react-fast-marquee"; // Import Marquee for scrolling effect
+// Define a type for Skill objects
 type Skill = {
   id: number;
   src: string;
@@ -11,6 +11,7 @@ type Skill = {
 
 const Skills = () => {
   const FRONTEND: Skill[] = [
+     // Array of front-end skills
     { id: 1, src: "html-5.png", alt: "HTML" },
     { id: 2, src: "css.png", alt: "CSS" },
     { id: 3, src: "javascript.svg", alt: "Javascript" },
@@ -29,6 +30,8 @@ const Skills = () => {
   ];
 
   const BACKEND: Skill[] = [
+
+  // Array of back-end skills
     { id: 1, src: "node-js.png", alt: "HTML" },
     { id: 2, src: "express.svg", alt: "CSS" },
     { id: 3, src: "mongodb.svg", alt: "Javascript" },

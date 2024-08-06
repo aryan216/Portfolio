@@ -5,7 +5,7 @@ import { IoIosArrowDropdown , IoIosArrowDropup } from "react-icons/io";
 import { motion, AnimatePresence } from 'framer-motion';
 
 import { FaLink, FaGithub } from "react-icons/fa";
-
+// Define Project type
 type Project = {
   id: number;
   name: string;
@@ -16,8 +16,10 @@ type Project = {
 };
 
 const Projects = () => {
-  const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
+  const [activeQuestion, setActiveQuestion] = useState<number | null>(null);// State for tracking active project details
+
   const PROJECTS: Project[] = [
+    // Define an array of projects
     {
       id: 1,
       name: "C2C",
@@ -26,91 +28,39 @@ const Projects = () => {
       description:"Lend or borrow anything with ease!  This webapp lets you turn your unused items into cash by listing them for rent. Need a fancy camera for the weekend? Find it here!  Browse a vast marketplace of rentable products, perfect for any occasion. It's a sharing economy win-win for everyone! ",
       tectsStack:"React JS , Node JS , Express JS , Tailwind Css , Mongodb , Multer"
     },
+    
     {
       id: 2,
-      name: "TaskManager",
-      liveLink: "https://manageyourtask.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/TaskManager",
-      description:"Updated soon",
-      tectsStack:"Nextjs 14 , NeonDb (For Database) , Shadcn (For Ui Integration) , Clerk(For Authentication) , ClerkORG (For User Orgnization)"
+      name: "Pinterest",
+      liveLink: "",
+      githubLink: "https://github.com/aryan216/Pintrest",
+      description:"Backend Project",
+      tectsStack:"Node JS , Express JS, Mongodb , Multer "
     },
     {
       id: 3,
-      name: "Diagram.io",
-      liveLink: "https://diagram-io.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/Diagram",
-      description:"Updated soon",
-      tectsStack:"NextJS 14 , Convex(For Database) , Editor.js (For Rich Text Editor) , ExcelDraw (For White board feature) "
-    },
-    {
-      id: 4,
-      name: "TakeNotes",
-      liveLink: "https://itstakenote.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/TakeNotes",
-      description:"Updated soon",
-      tectsStack:"NextJS 14 , Convex (For Realtime database) , Clerk (For Authentication) , Editor.js(For Rich text Editor)"
-    },
-    {
-      id: 5,
-      name: "Bookin",
-      liveLink: "https://bookinwebapp.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/bookinWebapp",
-      description:"Updated soon",
-      tectsStack:"React JS , NextJs13 , NextAuth (For Authentication) , Cloudanry (For Image Storage)"
-    },
-    {
-      id: 6,
-      name: "Linkit",
-      liveLink: "https://linkitt.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/customlink",
-      description:"Updated soon",
-      tectsStack:"React JS , Next JS14 , AWS S3 , Mongodb , TailwindCss, shadcn"
-    },
-    {
-      id: 7,
-      name: "ReadmeCreator",
-      liveLink: "https://createreadmemd.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/CreateReadme",
-      description:"Updated soon",
-      tectsStack:"React Js Next JS14 "
-    },
-    {
-      id: 8,
       name: "Netflix.io",
       liveLink: "https://itsmynetflix.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/netflix",
+      githubLink: "https://github.com/aryan216/Netflix",
       description:"Updated soon",
       tectsStack:"React JS , Next Js14 , Mongodb ,TMDb Api "
     },
+    
     {
-      id: 9,
-      name: "Whiteboard.io",
-      liveLink: "https://whiteboardd.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/whiteboard",
-      description:"Updated soon",
-      tectsStack:"NextJs 14 , React JS , TailwindCss , Shadcn , Convex (Database) , LiveBlock(For Live cursor) , Clerk(For Authentication) "
-    },
-    {
-      id: 10,
+      id: 4,
       name: "Learning Management",
       liveLink: "https://itsmylms.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/LearningManagement",
+      githubLink: "https://github.com/aryan216/Dukaan",
       description:"Updated soon", 
       tectsStack:"NEXT JS14 , App Routing , NeonDb , Uploadthings(For Content uplaod) , Mux(For Video optimization)"
     },
-     {
-      id: 11,
-      name: "E-commerce Webapp",
-      liveLink: "https://itsmylms.vercel.app/",
-      githubLink: "https://github.com/AmanTrivedi1/Ecom",
-      description:"Updated soon", 
-      tectsStack:"NEXT JS13 , App Routing , NeonDb , Prisma , Postgresql , zod , React form"
-    },
+    
   ];
 
   return (
     <div className="w-11/12 sm:w-9/12 m-auto">
       <main className="flex flex-col justify-center w-full m-auto mt-14 max-w-13xl">
+            {/* Main container for the projects section */}
         <div>
           <h1 className="p-4 text-xl font-semibold text-primaryPink sm:text-2xl md:text-3xl sm:pb-10 text-center">
             Projects
@@ -118,9 +68,12 @@ const Projects = () => {
         </div>  
       <div className=' '>
         {PROJECTS.map((q) => (
+          // Iterate over the PROJECTS array and render each project
           <div key={q.id} className='flex items-start border-b mb-4 border-primaryBorder justify-between '>
             <div className="">
+            
                <button className="w-full text-left  text-xl font-semibold
+              
                   focus:outline-none p-4 rounded-sm  shadow-md flex justify-between items-center"
                onClick={()=> setActiveQuestion(activeQuestion === q.id ? null : q.id) }>
                  {q.name} 

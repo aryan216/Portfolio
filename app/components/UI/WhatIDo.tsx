@@ -8,12 +8,14 @@ import { FaNodeJs } from "react-icons/fa";
 const WhatIDoPage = () => {
   return (
     <div>
+      {/*// The main component function */}
       <main className="flex flex-col justify-center w-full m-auto mt-8 max-w-13xl">
         <div>
           <h1 className="p-4 text-xl  font-semibold text-primaryPurple sm:text-2xl md:text-3xl sm:pb-10 text-center">
             WHAT I DO
           </h1>
         </div>
+          {/* Main content area with flex layout for responsive design */}
         <main className="flex flex-row flex-wrap w-11/12 gap-4 m-auto">
           <div className="flex-grow w-64 ">
             <div className="h-full pb-10 pl-6 pr-10 border rounded-md bg-primaryBlackCard border-primaryBorder ">

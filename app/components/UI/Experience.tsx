@@ -1,4 +1,6 @@
 "use client";
+//This component signifies the Experience section
+//Imports
 import Image from "next/image";
 import React from "react";
 
@@ -10,9 +12,10 @@ type Experience = {
 
   color: string;
 };
-
+// Define a TypeScript type schema for Experience
 const Experience = () => {
   const EXPERIENCE: Experience[] = [
+     // Array of experience objects
     {
       id: 1,
       name: "Stairs",
@@ -28,7 +31,7 @@ const Experience = () => {
     
       color: "primaryPurple",
     },
-   
+   // more experiences can be also added as needed
   
   ];
 

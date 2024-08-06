@@ -1,5 +1,7 @@
 
 "use client";
+
+// Imports of loading bar and animation libraries
 import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LoadingBar from "react-top-loading-bar";
@@ -17,6 +19,9 @@ const Welcome: React.FC<WelcomeProps> = ({
   const [index, setIndex] = useState<number>(0);
   const ref = useRef<any>(null); // Reference for the loading bar
 
+
+
+  // The languages that have been displayed in the start of the loading of application
   const languages: string[] = [
     "Hello",
     "Bonjour",
@@ -48,7 +53,7 @@ const Welcome: React.FC<WelcomeProps> = ({
     <div>
       <LoadingBar color="#FF8709" ref={ref} />
       <AnimatePresence>
-        {!animationCompleted && (
+        {!animationCompleted && ( // Conditionally render the animation
           <motion.div
             key="shutter"
             className="shutter absolute top-0 left-0 w-full h-full flex justify-center items-center bg-primaryBlack z-10"
@@ -64,7 +69,7 @@ const Welcome: React.FC<WelcomeProps> = ({
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
             >
-              &#8226; {welcomeMessage}
+              &#8226; {welcomeMessage} {/* Display the current welcome message */}
             </motion.div>
           </motion.div>
         )}

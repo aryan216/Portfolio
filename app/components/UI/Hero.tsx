@@ -1,24 +1,18 @@
 "use client";
+//Imports containing important files such as framer motion,icons as well as link for nextjs routing
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { BsTwitterX, BsGithub, BsLinkedin } from "react-icons/bs";
 import { CiMail } from "react-icons/ci";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const HeroPage = () => {
-  
+  // State variables for managing random x and y translations
   const [xTranslation, setXTranslation] = useState(0);
   const [yTranslation, setYTranslation] = useState(0);
-
-  
-
-  
-
-
-
   useEffect(() => {
+    //Update translation state with random values at regular intervals
     const interval = setInterval(() => {
       const randomX = Math.random() * 150 - 100;
       const randomY = Math.random() * 150 - 100;
@@ -27,11 +21,8 @@ const HeroPage = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
-
- 
-
-
+  }, []// Empty dependency array to run only once on mount
+);
 
   return (
     <div className="h-[calc(100vh-64px)]">
@@ -74,7 +65,9 @@ const HeroPage = () => {
             </div>
           </div>
           <div className="text-primaryCream flex text-[10px] items-center justify-center gap-2 pr-6 sm:ml-10">
+             {/* Flex container for introduction text */}
             <div className="relative">
+               {/* Container for animated image */}
               <motion.div
                 animate={{
                   x: Math.random() * 150 - 100,

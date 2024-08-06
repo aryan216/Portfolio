@@ -1,4 +1,6 @@
 "use client";
+
+// Imports of icons that have been used in  this page as well as link from nextjs
 import React from "react";
 import { BsTwitterX, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
@@ -8,6 +10,7 @@ const Footer = () => {
   return (
     <div>
       <div>
+         {/* Main container for the footer with responsive margins */}
         <main className="flex items-center justify-center mx-1 sm:mx-2 md:mx-3 lg:mx-4">
           <footer className="flex flex-wrap flex-col items-center justify-center w-screen mt-6 border border-primaryBorder rounded-xl max-w-[13xl] px-8 pt-8">
             <div className="flex relative overflow-hidden  items-center gap-y-12  justify-center sm:justify-between w-full px-3 pt-1 flex-wrap max-w-[10xl] md:px-6 xl:mx-10 sm:flex-row">
@@ -31,6 +34,8 @@ const Footer = () => {
                     Follow ME
                   </h1>
                 </div>
+                {/* Social media links with icons */}
+
                 <div className="flex gap-2 justify-center items-center p-2 border border-primaryBorder rounded-[40px]">
                   <Link
                     href="https://x.com/07ITAniket60376"
@@ -67,6 +72,7 @@ const Footer = () => {
         </main>
       </div>
       <div>
+         {/* Left section of the footer */}
         <div className="flex items-start justify-center">
           <div className="flex items-center justify-center w-full mx-1 sm:mx-2 md:mx-3 lg:mx-3 max-w-[13xl]">
             <div className="flex flex-col items-center justify-between w-full pb-2 sm:flex-row">
